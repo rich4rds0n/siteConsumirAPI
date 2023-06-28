@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima</title>
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
+
+    <link
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" 
+    />
+
+    <script src="Script/scripts.js" defer></script>
+</head>
+<body>
+    <div id="container" class="container">
+        <div class="form">
+            <a href="file:///C:/Users/user/Desktop/projetos-n1/Portifolio-Pessoal/index-portifolio.html"><h3>Clima da cidade agora</h3></a>
+            <div class="form-input-container">
+                <input type="text" placeholder="Digite o nome da cidade" id="city-input">
+                <button id="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="weather-data" class="hide">
+            <h2>
+                <i class="fa-solid fa-location-dot"></i>
+                <span id="city"></span>
+                <img src="" alt="Bandeira do país" id="country">
+            </h2>
+            <p id="temperature"><span></span>&deg;C</p>
+            <p id="sensacao-termica">Sensação térmica</p>
+            <p id="feels-like"><span></span>&deg;C</p>
+            <div id="description-container">
+                <p id="description"></p>
+                <img src="" alt="Condições do tempo" id="weather-icon">
+            </div>
+            <div id="details-container">
+                <p id="humidity">
+                    <i class="fa-solid fa-droplet"></i>
+                    <span></span>
+                </p>
+                <p id="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <span></span>
+                </p>
+            </div>
+
+            <div id="coord-container">
+                <p id="lat">
+                    Latitude
+                    <i class="fa-solid fa-lat"></i>
+                    <span></span>
+                </p>
+                <p id="lon">
+                    Longitude
+                    <i class="fa-solid fa-lon"></i>
+                    <span></span>
+                </p>
+            </div>
+        </div>
+
+        <div id="loader" class="hide">
+            <i class="fa-solid fa-spinner"></i>
+        </div>
+
+        <div class="footer">
+            <p><strong>Todos os Direitos Reservados © 2023
+                Desenvolvido por CodeYote</strong></p>
+                <br>
+                <a href =""><img src="https://img.shields.io/badge/-Gmail-%23E4405F?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
+                <a href =""><img src="https://img.shields.io/badge/-instagram-%23333?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
+                <a href =""><img src="https://img.shields.io/badge/-linkedIn-%23333?style=for-the-badge&logo=linkedIn&logoColor=white" target="_blank"></a>
+                <a href =""><img src="https://img.shields.io/badge/-whatsapp-%34a832?style=for-the-badge&logo=whatsapp&logoColor=white" target="_blank"></a>
+                <a href =""><img src="https://img.shields.io/badge/-github-%23333?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a>
+        </div>
+    </div>
+</body>
+</html>
